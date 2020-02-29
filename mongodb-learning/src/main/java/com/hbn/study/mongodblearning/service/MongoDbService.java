@@ -100,12 +100,12 @@ public class MongoDbService {
         mongoTemplate.remove(book);
         return "success";
     }
-
     /**
-     * 根据id删除
-     *
-     * @param id
-     * @return
+     * @Author huangbaoning
+     * @Description test
+     * @Date 2020/2/6
+     * @Param [id]
+     * @Return java.lang.String
      */
     public String deleteBookById(String id) {
         logger.info("--------------------->[MongoDB delete start]");
@@ -115,4 +115,7 @@ public class MongoDbService {
         deleteBook(book);
         return "success";
     }
+
+
+
 }
